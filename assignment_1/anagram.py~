@@ -1,0 +1,13 @@
+#!/usr/bin/python
+
+word_arr = list(raw_input().strip())
+
+def find_anagram(word_arr):
+    len_arr = len(word_arr)
+    if len_arr == 0:
+        print ""
+    for i in range(len_arr):
+        print word_arr[i] +
+        c = word_arr.pop(i)
+        find_anagram(word_arr)
+        word_arr.append(c, i)
